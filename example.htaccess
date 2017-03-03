@@ -1,0 +1,20 @@
+<Files .env>
+Order Allow,Deny
+Deny from all
+</Files>
+
+<IfModule mod_rewrite.c>
+	<IfModule mod_negotiation.c>
+	Options -MultiViews
+</IfModule>
+
+RewriteEngine On
+
+RewriteCond %{THE_REQUEST} /index [NC]    
+RewriteRule ^ / [R=302,L,NE]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
+
+</IfModule>
