@@ -24,17 +24,6 @@
 |
 */
 
-// These Routes For Installation we recommended you to delete them after install.
-$newInstall = public_path().'/darky.sql';
-$newUpdate  = public_path().'/update.sql';
-if (file_exists($newInstall)) {
-    Route::get('/install', 'InstallController@StartInstallation');
-}
-// Update Darky
-if (file_exists($newUpdate)) {
-    Route::get('/update', 'InstallController@StartUpdate');
-}
-
 // These Routes Only For Admin.
 Route::group(['prefix' => 'dashboard', 'middleware' => ['web', 'admin']], function () {
     Route::get('/','AdminController@index');

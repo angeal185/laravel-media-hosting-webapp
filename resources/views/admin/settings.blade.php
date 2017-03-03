@@ -30,7 +30,7 @@ $site_settings = DB::table('settings')->first();
                                 <form enctype="multipart/form-data" role="form" method="POST" action="{{ url('/dashboard/settings') }}"> {!! csrf_field() !!}
                                     <div style="margin-bottom: 30px;" class="col-md-9">
                                         <input class="form-control" placeholder="Site Title" name="site_title" value="{{$site_settings->website_name}}" type="text"> <span class="help-block">
-EX: Darky. </span> </div>
+EX: Website. </span> </div>
                                     <div style="margin-bottom: 30px;" class="col-md-9">
                                         <input class="form-control" placeholder="Title Description" name="short_description" value="{{$site_settings->title_description}}" type="text"> <span class="help-block">
 PMOY | Short Description Here. </span> </div>
@@ -39,7 +39,7 @@ PMOY | Short Description Here. </span> </div>
                                     </div>
                                     <div style="margin-bottom: 30px;" class="col-md-9">
                                         <input class="form-control" placeholder="Site Keywords" name="site_keyword" value="{{$site_settings->website_keywords}}" type="text"> <span class="help-block">
-EX: Darky, viral media, funny pictures... </span> </div>
+EX: Media </span> </div>
                                     <div style="margin-bottom: 30px;" class="col-md-9">
                                         <input class="form-control" placeholder="Site E-mail" name="site_email" value="{{$site_settings->website_email}}" type="text"> </div>
                                     <div style="margin-bottom: 30px;" class="col-md-9">

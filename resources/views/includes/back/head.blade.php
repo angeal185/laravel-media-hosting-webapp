@@ -16,5 +16,4 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.css" rel="stylesheet" type="text/css" />
 <link href="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/jqvmap.min.css" rel="stylesheet" type="text/css" />
 <link href="{{ URL::to('/') }}/themes/dark/admin/css/tasks.css" rel="stylesheet" type="text/css" />
-<link href="{{ URL::to('/') }}/themes/dark/admin/css/skins/all.css" rel="stylesheet" type="text/css" />
 <script src="//cdn.ckeditor.com/4.5.7/full/ckeditor.js"></script>
